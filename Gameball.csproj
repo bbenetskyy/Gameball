@@ -56,15 +56,10 @@
 	  <None Remove="Pages\" />
 	  <None Remove="PageModels\" />
 	  <None Remove="Resources\Styles\" />
-	  <None Remove="Resources\Styles\Colors.xml" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
 	  <Folder Include="PageModels\" />
-	  <Folder Include="Resources\Styles\" />
-	</ItemGroup>
-	<ItemGroup>
-	  <MauiXaml Include="Resources\Styles\Colors.xml" />
 	</ItemGroup>
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
