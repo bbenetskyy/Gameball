@@ -11,4 +11,9 @@
         <Setter Property="CornerRadius" Value="10" />
     </Style>
 
+    <Style TargetType="Button" x:Key="CenteredButton">
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+    </Style>
+
 </ResourceDictionary>

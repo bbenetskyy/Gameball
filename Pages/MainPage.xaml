@@ -4,20 +4,28 @@
              xmlns:pageModels="clr-namespace:Gameball.PageModels"
              x:Class="Gameball.MainPage"
              BackgroundColor="{DynamicResource SecondaryColor}">
-    <!--<ContentPage.BindingContext>
+    <ContentPage.BindingContext>
         <pageModels:MainPageModel/>
-    </ContentPage.BindingContext>-->
+    </ContentPage.BindingContext>
 
     <ScrollView>
-        <!--<HorizontalStackLayout
+        <VerticalStackLayout
             Spacing="25" 
-             Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+            Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
 
+
+            <Button 
+                Text="Refferal Page"
+                Style="{StaticResource CenteredButton}"/>
             
             <Button 
-                Text="Click me"
-                HorizontalOptions="Center" />
+                Text="Plus Rewards Page"
+                Style="{StaticResource CenteredButton}"/>
+            
+            <Button 
+                Text="Plus Rewards Logged Page"
+                Style="{StaticResource CenteredButton}"/>
 
-        </HorizontalStackLayout>-->
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
