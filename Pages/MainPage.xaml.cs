@@ -1,9 +1,11 @@
-﻿namespace Gameball;
+﻿using Gameball.PageModels;
+namespace Gameball;
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
+	public MainPage(MainPageModel pageModel)
 	{
+		BindingContext = pageModel;
 		InitializeComponent();
 	}
 }

@@ -3,11 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pageModels="clr-namespace:Gameball.PageModels"
              x:Class="Gameball.MainPage"
+             x:DataType="pageModels:MainPageModel"
              BackgroundColor="{DynamicResource SecondaryColor}">
-    <ContentPage.BindingContext>
-        <pageModels:MainPageModel/>
-    </ContentPage.BindingContext>
-
     <ScrollView>
         <VerticalStackLayout
             Spacing="25" 
@@ -16,14 +13,17 @@
 
             <Button 
                 Text="Refferal Page"
+                Command="{Binding OpenRefferalCommand}"
                 Style="{StaticResource CenteredButton}"/>
             
             <Button 
                 Text="Plus Rewards Page"
+                Command="{Binding OpenPlusRewardsCommand}"
                 Style="{StaticResource CenteredButton}"/>
             
             <Button 
                 Text="Plus Rewards Logged Page"
+                Command="{Binding OpenPlusRewardsLoggedCommand}"
                 Style="{StaticResource CenteredButton}"/>
 
         </VerticalStackLayout>
