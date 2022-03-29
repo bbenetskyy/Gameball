@@ -53,17 +53,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Pages\" />
-	  <None Remove="PageModels\" />
 	  <None Remove="Resources\Styles\" />
-	  <None Remove="Services\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
 	  <Folder Include="PageModels\" />
 	  <Folder Include="Services\" />
+	  <Folder Include="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Maui" Version="1.0.0-pre8" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0-preview2" />
 	</ItemGroup>
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">

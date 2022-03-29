@@ -25,9 +25,9 @@ public partial class MainPageModel : BasePageModel
     #region Commands
 
     [ICommand]
-    Task OpenRefferal()
+    void OpenRefferal()
     {
-        return _navigationService.NavigateToPage<ReferralPage>();
+        _ = _navigationService.NavigateToPage<ReferralPage>();
     }
 
     [ICommand]
