@@ -2,19 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pageModels="clr-namespace:Gameball.PageModels"
-             x:Class="Gameball.ReferralPage"
+             x:Class="Gameball.Pages.ReferralPage"
              x:DataType="pageModels:ReferralPageModel"
+             NavigationPage.HasNavigationBar="False"
              BackgroundColor="{DynamicResource SecondaryColor}">
-    <ContentPage.BindingContext>
-        <pageModels:ReferralPageModel/>
-    </ContentPage.BindingContext>
-
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25" 
+            Spacing="25"
             Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
 
-            <Label Text="Refferal Page Model"/>
+            <Label Text="Refferal Page Model"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+
             
 
         </VerticalStackLayout>

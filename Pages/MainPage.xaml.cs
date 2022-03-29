@@ -1,5 +1,5 @@
 ﻿using Gameball.PageModels;
-namespace Gameball;
+namespace Gameball.Pages;
 
 public partial class MainPage : ContentPage
 {

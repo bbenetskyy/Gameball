@@ -1,4 +1,5 @@
 ﻿using Gameball.PageModels;
+using Gameball.Pages;
 using Gameball.Services;
 using CommunityToolkit.Maui;
 
@@ -26,6 +27,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<ReferralPageModel>();
 
 		builder.Services.AddSingleton<INavigationService, NavigationService>();
+		builder.Services.AddSingleton<IAlertService, AlertService>();
 
 		return builder.Build();
 	}

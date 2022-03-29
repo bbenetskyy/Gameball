@@ -1,11 +1,13 @@
-﻿using System;
-namespace Gameball.Pages
+﻿using Gameball.PageModels;
+
+namespace Gameball.Pages;
+
+public partial class ReferralPage : ContentPage
 {
-	public partial class ReferralPage : ContentPage
+	public ReferralPage(ReferralPageModel pageModel)
 	{
-		public ReferralPage()
-		{
-		}
+		BindingContext = pageModel;
+		InitializeComponent();
 	}
 }
 
